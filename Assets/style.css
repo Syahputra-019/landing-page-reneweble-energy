@@ -14,7 +14,7 @@ header {
 }
 
 .hero {
-    background-image: url("images/bg-hero.webp");
+    background-image: url("../images/bg-hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -583,7 +583,7 @@ nav {
     }
 
     .hero {
-        background-image: url("images/bg-hero.webp");
+        background-image: url("../images/bg-hero.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -993,7 +993,7 @@ nav {
     }
 
     .hero {
-        background-image: url("images/bg-hero.webp");
+        background-image: url("../images/bg-hero.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1438,7 +1438,7 @@ nav {
     }
 
     .hero {
-        background-image: url("images/bg-hero.webp");
+        background-image: url("../images/bg-hero.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
