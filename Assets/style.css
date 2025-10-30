@@ -10,7 +10,7 @@ header {
     background-color: rgba(255, 255, 255, 1);
     width: 100%;
     height: auto;
-    padding: 1.75rem;
+    padding: 0.5rem;
 }
 
 .hero {
@@ -21,7 +21,7 @@ header {
     border-radius: 60px;
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 nav {
@@ -38,6 +38,7 @@ nav {
 
 .navbar-nav {
     font-size: 1rem;
+    margin: 0 auto;
 }
 
 .nav-item {
@@ -48,32 +49,31 @@ nav {
     display: block;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 100px;
-
 }
 
 .collapse {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.btn-register {
+.btn-contact {
     background-color: rgba(255, 82, 82, 1);
     color: rgba(255, 255, 255, 1);
 }
 
 .content-hero {
-    margin-top: 12rem;
+    margin-top: 2rem;
 }
 
 .title-hero h1 {
-    font-size: 4.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
 .title-hero p {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .btn-hero {
@@ -86,7 +86,7 @@ nav {
 }
 
 .stat-hero h1 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     font-weight: 600;
 }
 
@@ -150,133 +150,28 @@ nav {
     border-radius: 48px;
 }
 
-.energy-section {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-img {
-    position: relative;
-    width: 45rem;
-}
-
-.main-img img {
-    border-radius: 48px;
-    object-fit: cover;
-    width: 100%;
-    height: 50rem;
-}
-
-.play-btn {
-    position: absolute;
-    bottom: 35px;
-    left: 35px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6);
-    border: none;
-    font-size: 22px;
-    color: #ff5252;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-}
-
-.overlay-img {
-    top: 15%;
-    left: 45%;
-    width: auto
-}
-
-.overlay-img img {
-    border-radius: 48px;
-    width: 25rem;
-    height: 36rem;
-    transform: rotate(10deg);
-
-}
-
-/* 🔴 Titik dan label */
-.point {
-    position: absolute;
-    display: flex;
-    align-items: center;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    background: #ff5252;
-    border-radius: 50%;
-    border: 2px solid white;
-    z-index: 2;
-}
-
-/* Label */
-.label {
-    font-size: 16px;
-    border: 1px solid #ff5252;
-    border-radius: 999px;
-    padding: 5px 10px;
-    margin-left: 15px;
-    color: #333;
-    background: #fff;
-    white-space: nowrap;
-}
-
-/* Posisi tiap titik */
-.point-1 {
-    top: 10%;
-    right: -210px;
-}
-
-.point-2 {
-    top: 30%;
-    right: -220px;
-}
-
-.point-3 {
-    top: 60%;
-    right: -240px;
-}
-
-.point-4 {
-    top: 85%;
-    right: -250px;
-}
-
-/* Garis bantu (opsional untuk tampilan seperti contoh) */
-.point::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 40px;
-    background: #ccc;
-    left: 5px;
-    top: 12px;
-}
-
 .img-teknologi {
     width: 100%;
-    height: 30rem;
-    border-radius: 48px;
+    height: auto;
+    border-radius: 28px;
     object-fit: cover;
 }
 
 .icon-teknologi {
-    height: 56px;
-    width: 56px;
+    height: 45px;
+    width: 45px;
 }
 
 .ai-engine {
-    height: 12rem;
-    width: 21;
+    height: auto;
     border: 1px solid rgba(255, 82, 82, 1);
     border-radius: 26px;
     align-self: center
+}
+
+.img-environ {
+    width: 100%;
+    height: auto;
 }
 
 .teknologi-kanan span {
@@ -323,10 +218,9 @@ nav {
     background-color: rgba(255, 201, 201, 1);
 }
 
-
 .line {
     width: 4px;
-    height: 65px;
+    height: 180px;
     background-color: rgba(255, 82, 82, 1);
     margin: -2px 0;
 }
@@ -344,7 +238,7 @@ nav {
 }
 
 .step-content p {
-    max-width: 600px;
+    max-width: auto;
     line-height: 1.6;
 }
 
@@ -383,7 +277,7 @@ nav {
     height: auto;
     object-fit: cover;
     border-radius: 30px;
-    margin-top: 50px;
+    margin-top: 1rem;
 }
 
 .logo a {
@@ -409,7 +303,7 @@ nav {
 .subscribe-box {
     background-color: #f9f9f9;
     border: 1px solid #ff5a5a;
-    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -435,4 +329,1380 @@ nav {
 .arrow {
     width: 18px;
     height: 18px;
+}
+
+@media (max-width: 991.98px) {
+
+    .energy-section {
+        display: block;
+        padding: 1.5rem;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .main-img img {
+        height: auto;
+    }
+
+    .overlay-img {
+        position: static !important;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .overlay-img img {
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+
+    .play-btn {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        border: none;
+        font-size: 18px;
+        color: #ff5252;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+
+    .point {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        top: auto;
+        right: auto;
+        margin: 1rem 0rem;
+        width: 100%;
+        padding: 0rem 1rem;
+        border: 1px solid #ff5252;
+        border-radius: 28px;
+    }
+
+    .point-1,
+    .point-2,
+    .point-3,
+    .point-4 {
+        top: auto;
+        right: auto;
+    }
+
+    .label {
+        white-space: normal;
+    }
+
+    .point::after {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        font-family: "Manrope", sans-serif;
+    }
+
+    .plusjakarta {
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 1);
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .hero {
+        background-image: url("/images/bg-hero.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 60px;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    nav {
+        background-color: rgba(39, 39, 39, 1);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 1);
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.125rem !important;
+    }
+
+    .navbar-nav {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        padding: 0rem 0.75rem;
+    }
+
+    .nav-item:hover {
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 100px;
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-contact {
+        background-color: rgba(255, 82, 82, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .content-hero {
+        margin-top: 8rem;
+    }
+
+    .title-hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    .title-hero p {
+        font-weight: 600;
+    }
+
+    .btn-hero {
+        background: radial-gradient(68.28% 92.86% at 50.28% 92.86%,
+                #FF5252 0%,
+                #FF5252 49.68%,
+                #FF5252 100%);
+        box-shadow: inset 0 8px 18px rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .stat-hero h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    .stat-hero-value {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px);
+    }
+
+    .img-stat img {
+        width: 57px;
+        height: 57px;
+        object-fit: cover;
+    }
+
+    .border-img-stat {
+        border: 0.5px solid rgba(255, 82, 82, 1);
+        margin-left: -10px;
+    }
+
+    .btn-plus-stat {
+        background: rgba(255, 82, 82, 1);
+        border: 3px solid rgba(249, 249, 249, 1);
+        width: 57px;
+        height: 57px;
+        color: rgba(249, 249, 249, 1);
+    }
+
+    .stat-day {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px);
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-progress {
+        background-color: rgba(241, 241, 241, 1);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .progress-bar {
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle {
+        border: 20px solid rgba(255, 82, 82, 1);
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .img-about {
+        width: 100%;
+        height: 28rem;
+        object-fit: cover;
+        border-radius: 48px;
+    }
+
+    .energy-section {
+        display: block;
+        padding: 1.5rem;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .main-img img {
+        height: auto;
+        border-radius: 28px;
+    }
+
+    .overlay-img {
+        position: static !important;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .overlay-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 28px;
+        transform: none;
+    }
+
+    .play-btn {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        border: none;
+        font-size: 18px;
+        color: #ff5252;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+
+    .point {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        top: auto;
+        right: auto;
+        margin: 1rem 0rem;
+        width: 70%;
+        padding: 0rem 1rem;
+        border: 1px solid #ff5252;
+        border-radius: 28px;
+    }
+
+    .point-1,
+    .point-2,
+    .point-3,
+    .point-4 {
+        top: auto;
+        right: auto;
+    }
+
+    .label {
+        white-space: normal;
+    }
+
+    .point::after {
+        display: none;
+    }
+
+    .img-teknologi {
+        width: 100%;
+        height: 100%;
+        border-radius: 48px;
+        object-fit: cover;
+    }
+
+    .icon-teknologi {
+        height: 56px;
+        width: 56px;
+    }
+
+    .ai-engine {
+        height: 15rem;
+        border: 1px solid rgba(255, 82, 82, 1);
+        border-radius: 26px;
+        align-self: center
+    }
+
+    .img-environ {
+        width: 100%;
+        height: auto;
+    }
+
+    .teknologi-kanan span {
+        color: rgba(255, 82, 82, 1);
+    }
+
+    .teknologi-kanan div {
+        border-radius: 18px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .circle-env {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: white;
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+    }
+
+    .line {
+        width: 4px;
+        height: 65px;
+        background-color: rgba(255, 82, 82, 1);
+        margin: -2px 0;
+    }
+
+    .line1 {
+        width: 4px;
+        height: 15px;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+        margin: -2px 0;
+    }
+
+    .step-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .step-content p {
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        background-color: rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .card-success {
+        border-radius: 12px;
+        background-color: rgba(241, 241, 241, 1);
+    }
+
+    .img-success {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-how {
+        background-color: rgba(241, 241, 241, 1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .icon-how {
+        width: 36px;
+        height: 36px;
+    }
+
+    .img-how {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-top: 0;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: rgba(39, 39, 39, 1);
+    }
+
+    .btn-submit {
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .divider {
+        width: 80%;
+        height: 1px;
+        background-color: rgba(39, 39, 39, 0.5);
+    }
+
+    .icon-sosmed {
+        width: 25px;
+        height: 25px;
+    }
+
+    .subscribe-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ff5a5a;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .email-text {
+        font-size: 1rem;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .btn-submit1 {
+        background-color: #ff4d4d;
+        color: white;
+        font-weight: 600;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-submit1:hover {
+        background-color: #e53e3e;
+        transform: translateY(-2px);
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (min-width:1024px) {
+    body {
+        font-family: "Manrope", sans-serif;
+    }
+
+    .plusjakarta {
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 1);
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .hero {
+        background-image: url("/images/bg-hero.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 60px;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    nav {
+        background-color: rgba(39, 39, 39, 1);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 1);
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.125rem !important;
+    }
+
+    .navbar-nav {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        padding: 0rem 0.75rem;
+    }
+
+    .nav-item:hover {
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 100px;
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-contact {
+        background-color: rgba(255, 82, 82, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .content-hero {
+        margin-top: 8rem;
+    }
+
+    .title-hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    .title-hero p {
+        font-weight: 600;
+    }
+
+    .btn-hero {
+        background: radial-gradient(68.28% 92.86% at 50.28% 92.86%,
+                #FF5252 0%,
+                #FF5252 49.68%,
+                #FF5252 100%);
+        box-shadow: inset 0 8px 18px rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .stat-hero h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    .stat-hero-value {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px);
+    }
+
+    .img-stat img {
+        width: 57px;
+        height: 57px;
+        object-fit: cover;
+    }
+
+    .border-img-stat {
+        border: 0.5px solid rgba(255, 82, 82, 1);
+        margin-left: -10px;
+    }
+
+    .btn-plus-stat {
+        background: rgba(255, 82, 82, 1);
+        border: 3px solid rgba(249, 249, 249, 1);
+        width: 57px;
+        height: 57px;
+        color: rgba(249, 249, 249, 1);
+    }
+
+    .stat-day {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px);
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-progress {
+        background-color: rgba(241, 241, 241, 1);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .progress-bar {
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle {
+        border: 20px solid rgba(255, 82, 82, 1);
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .img-about {
+        width: 100%;
+        height: 28rem;
+        object-fit: cover;
+        border-radius: 48px;
+    }
+
+    .energy-section {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-img {
+        position: relative;
+        width: 30rem;
+    }
+
+    .main-img img {
+        border-radius: 48px;
+        object-fit: cover;
+        width: 100%;
+        height: 45rem;
+    }
+
+    .play-btn {
+        position: absolute;
+        bottom: 35px;
+        left: 35px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        border: none;
+        font-size: 22px;
+        color: #ff5252;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+
+    .overlay-img {
+        top: 15%;
+        left: 30%;
+        width: auto
+    }
+
+    .overlay-img img {
+        border-radius: 48px;
+        width: 25rem;
+        height: 36rem;
+        transform: rotate(10deg);
+
+    }
+
+    /* 🔴 Titik dan label */
+    .point {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background: #ff5252;
+        border-radius: 50%;
+        border: 2px solid white;
+        z-index: 2;
+    }
+
+    /* Label */
+    .label {
+        font-size: 16px;
+        border: 1px solid #ff5252;
+        border-radius: 999px;
+        padding: 5px 10px;
+        margin-left: 15px;
+        color: #333;
+        background: #fff;
+        white-space: nowrap;
+    }
+
+    /* Posisi tiap titik */
+    .point-1 {
+        top: 10%;
+        right: -210px;
+    }
+
+    .point-2 {
+        top: 30%;
+        right: -220px;
+    }
+
+    .point-3 {
+        top: 60%;
+        right: -240px;
+    }
+
+    .point-4 {
+        top: 85%;
+        right: -250px;
+    }
+
+    /* Garis bantu (opsional untuk tampilan seperti contoh) */
+    .point::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        background: #ccc;
+        left: 5px;
+        top: 12px;
+    }
+
+    .img-teknologi {
+        width: 100%;
+        height: 100%;
+        border-radius: 48px;
+        object-fit: cover;
+    }
+
+    .icon-teknologi {
+        height: 56px;
+        width: 56px;
+    }
+
+    .ai-engine {
+        height: 12rem;
+        border: 1px solid rgba(255, 82, 82, 1);
+        border-radius: 26px;
+        align-self: center
+    }
+
+    .img-environ {
+        width: 100%;
+        height: auto;
+    }
+
+    .teknologi-kanan span {
+        color: rgba(255, 82, 82, 1);
+    }
+
+    .teknologi-kanan div {
+        border-radius: 18px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .circle-env {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: white;
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+    }
+
+
+    .line {
+        width: 4px;
+        height: 85px;
+        background-color: rgba(255, 82, 82, 1);
+        margin: -2px 0;
+    }
+
+    .line1 {
+        width: 4px;
+        height: 30px;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+        margin: -2px 0;
+    }
+
+    .step-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .step-content p {
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        background-color: rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .card-success {
+        border-radius: 12px;
+        background-color: rgba(241, 241, 241, 1);
+    }
+
+    .img-success {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-how {
+        background-color: rgba(241, 241, 241, 1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .icon-how {
+        width: 36px;
+        height: 36px;
+    }
+
+    .img-how {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: rgba(39, 39, 39, 1);
+    }
+
+    .btn-submit {
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .divider {
+        width: 80%;
+        height: 1px;
+        background-color: rgba(39, 39, 39, 0.5);
+    }
+
+    .icon-sosmed {
+        width: 25px;
+        height: 25px;
+    }
+
+    .subscribe-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ff5a5a;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .email-text {
+        font-size: 1rem;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .btn-submit1 {
+        background-color: #ff4d4d;
+        color: white;
+        font-weight: 600;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-submit1:hover {
+        background-color: #e53e3e;
+        transform: translateY(-2px);
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (min-width:1440px) {
+    body {
+        font-family: "Manrope", sans-serif;
+    }
+
+    .plusjakarta {
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 1);
+        width: 100%;
+        height: auto;
+        padding: 1.75rem;
+    }
+
+    .hero {
+        background-image: url("/images/bg-hero.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 60px;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    nav {
+        background-color: rgba(39, 39, 39, 1);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 1);
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.125rem !important;
+    }
+
+    .navbar-nav {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        padding: 0rem 0.75rem;
+    }
+
+    .nav-item:hover {
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 100px;
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-contact {
+        background-color: rgba(255, 82, 82, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .content-hero {
+        margin-top: 12rem;
+    }
+
+    .title-hero h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+
+    .title-hero p {
+        font-weight: 600;
+    }
+
+    .btn-hero {
+        background: radial-gradient(68.28% 92.86% at 50.28% 92.86%,
+                #FF5252 0%,
+                #FF5252 49.68%,
+                #FF5252 100%);
+        box-shadow: inset 0 8px 18px rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .stat-hero h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    .stat-hero-value {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px);
+    }
+
+    .img-stat img {
+        width: 57px;
+        height: 57px;
+        object-fit: cover;
+    }
+
+    .border-img-stat {
+        border: 0.5px solid rgba(255, 82, 82, 1);
+        margin-left: -10px;
+    }
+
+    .btn-plus-stat {
+        background: rgba(255, 82, 82, 1);
+        border: 3px solid rgba(249, 249, 249, 1);
+        width: 57px;
+        height: 57px;
+        color: rgba(249, 249, 249, 1);
+    }
+
+    .stat-day {
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px);
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-progress {
+        background-color: rgba(241, 241, 241, 1);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .progress-bar {
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle {
+        border: 20px solid rgba(255, 82, 82, 1);
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .img-about {
+        width: 100%;
+        height: 28rem;
+        object-fit: cover;
+        border-radius: 48px;
+    }
+
+    .energy-section {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-img {
+        position: relative;
+        width: 45rem;
+    }
+
+    .main-img img {
+        border-radius: 48px;
+        object-fit: cover;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .play-btn {
+        position: absolute;
+        bottom: 35px;
+        left: 35px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        border: none;
+        font-size: 22px;
+        color: #ff5252;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+
+    .overlay-img {
+        top: 15%;
+        left: 45%;
+        width: auto
+    }
+
+    .overlay-img img {
+        border-radius: 48px;
+        width: 25rem;
+        height: 36rem;
+        transform: rotate(10deg);
+
+    }
+
+    /* 🔴 Titik dan label */
+    .point {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background: #ff5252;
+        border-radius: 50%;
+        border: 2px solid white;
+        z-index: 2;
+    }
+
+    /* Label */
+    .label {
+        font-size: 16px;
+        border: 1px solid #ff5252;
+        border-radius: 999px;
+        padding: 5px 10px;
+        margin-left: 15px;
+        color: #333;
+        background: #fff;
+        white-space: nowrap;
+    }
+
+    /* Posisi tiap titik */
+    .point-1 {
+        top: 10%;
+        right: -210px;
+    }
+
+    .point-2 {
+        top: 30%;
+        right: -220px;
+    }
+
+    .point-3 {
+        top: 60%;
+        right: -240px;
+    }
+
+    .point-4 {
+        top: 85%;
+        right: -250px;
+    }
+
+    /* Garis bantu (opsional untuk tampilan seperti contoh) */
+    .point::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        background: #ccc;
+        left: 5px;
+        top: 12px;
+    }
+
+    .img-teknologi {
+        width: 100%;
+        height: 30rem;
+        border-radius: 48px;
+        object-fit: cover;
+    }
+
+    .icon-teknologi {
+        height: 56px;
+        width: 56px;
+    }
+
+    .ai-engine {
+        height: 12rem;
+        border: 1px solid rgba(255, 82, 82, 1);
+        border-radius: 26px;
+        align-self: center
+    }
+
+    .img-environ {
+        width: 100%;
+        height: auto;
+    }
+
+    .teknologi-kanan span {
+        color: rgba(255, 82, 82, 1);
+    }
+
+    .teknologi-kanan div {
+        border-radius: 18px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .circle-env {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: white;
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+    }
+
+
+    .line {
+        width: 4px;
+        height: 65px;
+        background-color: rgba(255, 82, 82, 1);
+        margin: -2px 0;
+    }
+
+    .line1 {
+        width: 4px;
+        height: 40px;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+        margin: -2px 0;
+    }
+
+    .step-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .step-content p {
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        background-color: rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .card-success {
+        border-radius: 12px;
+        background-color: rgba(241, 241, 241, 1);
+    }
+
+    .img-success {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-how {
+        background-color: rgba(241, 241, 241, 1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .icon-how {
+        width: 36px;
+        height: 36px;
+    }
+
+    .img-how {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: rgba(39, 39, 39, 1);
+    }
+
+    .btn-submit {
+        border: 1px solid rgba(255, 82, 82, 1);
+    }
+
+    .divider {
+        width: 80%;
+        height: 1px;
+        background-color: rgba(39, 39, 39, 0.5);
+    }
+
+    .icon-sosmed {
+        width: 25px;
+        height: 25px;
+    }
+
+    .subscribe-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ff5a5a;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .email-text {
+        font-size: 1rem;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .btn-submit1 {
+        background-color: #ff4d4d;
+        color: white;
+        font-weight: 600;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-submit1:hover {
+        background-color: #e53e3e;
+        transform: translateY(-2px);
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+    }
 }
