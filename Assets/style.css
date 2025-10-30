@@ -14,7 +14,7 @@ header {
 }
 
 .hero {
-    background-image: url("/images/bg-hero.webp");
+    background-image: url("images/bg-hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,8 +243,8 @@ nav {
 }
 
 .dot {
-    height: 8px;
-    width: 8px;
+    height: 4px;
+    width: 4px;
     background-color: rgba(191, 191, 191, 1);
     border-radius: 50%;
     align-self: center;
@@ -331,11 +331,11 @@ nav {
     height: 18px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
 
     .energy-section {
         display: block;
-        padding: 1.5rem;
+        padding: 0.5rem;
     }
 
     .main-img {
@@ -405,6 +405,165 @@ nav {
     .point::after {
         display: none;
     }
+
+    .dot {
+        height: 4px;
+        width: 4px;
+        background-color: rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        align-self: center;
+        margin-right: 8px;
+    }
+}
+
+@media (min-width:375px) {
+    .energy-section {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .dot {
+        height: 4px;
+        width: 4px;
+        background-color: rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .circle-env {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: white;
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+    }
+
+    .line {
+        width: 4px;
+        height: 155px;
+        background-color: rgba(255, 82, 82, 1);
+        margin: -2px 0;
+    }
+
+    .line1 {
+        width: 4px;
+        height: 40px;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+        margin: -2px 0;
+    }
+
+    .step-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .step-content p {
+        max-width: auto;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width:425px) {
+    .energy-section {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .dot {
+        height: 4px;
+        width: 4px;
+        background-color: rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .circle-env {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: white;
+        background-color: rgba(255, 82, 82, 1);
+    }
+
+    .circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+    }
+
+    .line {
+        width: 4px;
+        height: 130px;
+        background-color: rgba(255, 82, 82, 1);
+        margin: -2px 0;
+    }
+
+    .line1 {
+        width: 4px;
+        height: 35px;
+        color: rgba(255, 82, 82, 1);
+        background-color: rgba(255, 201, 201, 1);
+        margin: -2px 0;
+    }
+
+    .step-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .step-content p {
+        max-width: auto;
+        line-height: 1.6;
+    }
 }
 
 @media (min-width:768px) {
@@ -424,7 +583,7 @@ nav {
     }
 
     .hero {
-        background-image: url("/images/bg-hero.webp");
+        background-image: url("images/bg-hero.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -834,7 +993,7 @@ nav {
     }
 
     .hero {
-        background-image: url("/images/bg-hero.webp");
+        background-image: url("images/bg-hero.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1006,8 +1165,6 @@ nav {
     }
 
     .overlay-img {
-        top: 15%;
-        left: 30%;
         width: auto
     }
 
@@ -1015,8 +1172,10 @@ nav {
         border-radius: 48px;
         width: 25rem;
         height: 36rem;
-        transform: rotate(10deg);
-
+        transform: rotate(8deg);
+        left: 30%;
+        top: 15%;
+        position: absolute;
     }
 
     /* 🔴 Titik dan label */
@@ -1024,6 +1183,8 @@ nav {
         position: absolute;
         display: flex;
         align-items: center;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .dot {
@@ -1038,34 +1199,32 @@ nav {
     /* Label */
     .label {
         font-size: 16px;
-        border: 1px solid #ff5252;
         border-radius: 999px;
         padding: 5px 10px;
         margin-left: 15px;
         color: #333;
-        background: #fff;
         white-space: nowrap;
     }
 
     /* Posisi tiap titik */
     .point-1 {
-        top: 10%;
-        right: -210px;
+        top: 20%;
+        right: 10%;
     }
 
     .point-2 {
-        top: 30%;
-        right: -220px;
+        top: 35%;
+        right: 10%;
     }
 
     .point-3 {
-        top: 60%;
-        right: -240px;
+        top: 55%;
+        right: 10%;
     }
 
     .point-4 {
-        top: 85%;
-        right: -250px;
+        top: 70%;
+        right: 10%;
     }
 
     /* Garis bantu (opsional untuk tampilan seperti contoh) */
@@ -1279,7 +1438,7 @@ nav {
     }
 
     .hero {
-        background-image: url("/images/bg-hero.webp");
+        background-image: url("images/bg-hero.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1451,17 +1610,17 @@ nav {
     }
 
     .overlay-img {
-        top: 15%;
-        left: 45%;
-        width: auto
+        width: auto;
     }
 
     .overlay-img img {
         border-radius: 48px;
-        width: 25rem;
+        width: 30rem;
         height: 36rem;
         transform: rotate(10deg);
-
+        left: 35%;
+        top: 15%;
+        position: absolute;
     }
 
     /* 🔴 Titik dan label */
@@ -1469,6 +1628,8 @@ nav {
         position: absolute;
         display: flex;
         align-items: center;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .dot {
@@ -1483,34 +1644,32 @@ nav {
     /* Label */
     .label {
         font-size: 16px;
-        border: 1px solid #ff5252;
         border-radius: 999px;
         padding: 5px 10px;
         margin-left: 15px;
         color: #333;
-        background: #fff;
         white-space: nowrap;
     }
 
     /* Posisi tiap titik */
     .point-1 {
-        top: 10%;
-        right: -210px;
+        top: 20%;
+        right: 10%;
     }
 
     .point-2 {
-        top: 30%;
-        right: -220px;
+        top: 40%;
+        right: 10%;
     }
 
     .point-3 {
         top: 60%;
-        right: -240px;
+        right: 10%;
     }
 
     .point-4 {
-        top: 85%;
-        right: -250px;
+        top: 75%;
+        right: 10%;
     }
 
     /* Garis bantu (opsional untuk tampilan seperti contoh) */
